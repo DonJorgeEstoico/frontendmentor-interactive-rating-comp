@@ -1,0 +1,2 @@
+# frontendmentor-interactive-rating-comp
+ 

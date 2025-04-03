@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="js/index.js"></script>
+    <title>Interactive Rating Component</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <article id="article-submit">
+                <div class="star-area">
+                    <img src="assets/images/icon-star.svg" alt="icon-star">
+                </div>
+                <h3>
+                    How did we do?
+                </h3>
+                <span>
+                    Please let us know how we did with your support <br>
+                    request. All feedback is appreciated to help us <br>
+                    improve our offering!
+                </span>
+                <div id="btn-number-area">
+                    <button class="range-btn" onclick="selectButton(0)">
+                        1
+                    </button>
+                    <button class="range-btn" onclick="selectButton(1)">
+                        2
+                    </button>
+                    <button class="range-btn" onclick="selectButton(2)">
+                        3
+                    </button>
+                    <button class="range-btn" onclick="selectButton(3)">
+                        4
+                    </button>
+                    <button class="range-btn" onclick="selectButton(4)">
+                        5
+                    </button>
+                </div>
+                <button id="btn-submit" onclick="submit()">
+                    SUBMIT
+                </button>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+html {
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    width: -moz-available;
+    /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;
+    /* Mozilla-based browsers will ignore this. */
+    margin-inline: 18vw;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: hsl(216, 12%, 8%);
+}
+
+/*------------------------------FONTS------------------------------*/
+.overpass-font,
+h2,
+h3,
+span,
+button,
+#num-selected-area {
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h2,
+h3 {
+    margin: 0;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+span {
+    font-weight: 300;
+    color: hsl(217, 19%, 61%);
+}
+
+/*------------------------------FLEXBOX------------------------------*/
+.flex-column,
+main,
+section,
+article,
+#article-submit,
+#article-thank-you  {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row,
+#btn-number-area {
+    display: flex;
+    flex-direction: row;
+}
+
+/*------------------------------ARTICLE------------------------------*/
+article {
+    padding: 2rem;
+    border-radius: 2rem;
+    background: linear-gradient(180deg, rgba(37,45,55,1) 0%, rgba(29,35,43,1) 100%);
+}
+
+#article-submit {
+    gap: 1.5rem;
+}
+
+.star-area {
+    padding: 1rem;
+    width: fit-content;
+    border-radius: 2rem;
+    background-color: #29323e;
+}
+
+#btn-number-area {
+    justify-content: space-between;
+}
+
+button {
+    cursor: pointer;
+}
+
+.range-btn {
+    padding: 1rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1rem;
+    color: hsl(217, 19%, 61%);
+    background-color: #29323e;
+    border-style: none;
+    border-radius: 3rem;
+    transition: background-color 0.2s ease;
+}
+
+.first-active,
+.last-active {
+    color: #121417;
+}
+
+.first-active {
+    background-color: #FFFFFF;
+}
+
+.last-active {
+    background-color: hsl(25, 97%, 53%);
+}
+
+#btn-submit {
+    padding: 1rem;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    border-radius: 2rem;
+}
+
+/*------------------------------THANK-YOU------------------------------*/
+#article-thank-you {
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+}
+
+#illustration-thank-you {
+    width: 10rem;
+}
+
+#num-selected-area {
+    font-weight: 300;
+    padding-inline: 1.5rem;
+    padding-block: 0.5rem;
+    width: fit-content;
+    border-radius: 2rem;
+    background-color: #29323e;
+}
+
+#num-selected-area,
+#first-num,
+#last-num {
+    color: hsl(25, 97%, 53%);
+}
