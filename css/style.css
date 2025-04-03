@@ -109,10 +109,12 @@ button {
     color: #121417;
 }
 
+#btn-submit:focus,
 .first-active {
     background-color: #FFFFFF;
 }
 
+#btn-submit,
 .last-active {
     background-color: hsl(25, 97%, 53%);
 }
